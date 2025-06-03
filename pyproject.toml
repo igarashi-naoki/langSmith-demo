@@ -8,6 +8,7 @@ authors = [
 dependencies = [
     "langchain-openai>=0.3.18",
     "langchain-core>=0.3.63",
+    "langgraph>=0.4.8",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"

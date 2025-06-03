@@ -28,6 +28,7 @@ h11==0.16.0
 httpcore==1.0.9
     # via httpx
 httpx==0.28.1
+    # via langgraph-sdk
     # via langsmith
     # via openai
 idna==3.10
@@ -42,20 +43,36 @@ jsonpointer==3.0.0
     # via jsonpatch
 langchain-core==0.3.63
     # via langchain-openai
+    # via langgraph
+    # via langgraph-checkpoint
+    # via langgraph-prebuilt
     # via langsmith-demo
 langchain-openai==0.3.18
     # via langsmith-demo
+langgraph==0.4.8
+    # via langsmith-demo
+langgraph-checkpoint==2.0.26
+    # via langgraph
+    # via langgraph-prebuilt
+langgraph-prebuilt==0.2.2
+    # via langgraph
+langgraph-sdk==0.1.70
+    # via langgraph
 langsmith==0.3.43
     # via langchain-core
 openai==1.82.1
     # via langchain-openai
 orjson==3.10.18
+    # via langgraph-sdk
     # via langsmith
+ormsgpack==1.10.0
+    # via langgraph-checkpoint
 packaging==24.2
     # via langchain-core
     # via langsmith
 pydantic==2.11.5
     # via langchain-core
+    # via langgraph
     # via langsmith
     # via openai
 pydantic-core==2.33.2
@@ -90,5 +107,7 @@ typing-inspection==0.4.1
     # via pydantic
 urllib3==2.4.0
     # via requests
+xxhash==3.5.0
+    # via langgraph
 zstandard==0.23.0
     # via langsmith
